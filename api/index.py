@@ -30,7 +30,7 @@ async def root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 
-@app.post("/login_action")
+@app.post("/send_value")
 async def register_user(request: Request, username:str = Form(...), text:str = Form(...)):
     conn = get_db_connection()
     cursor = conn.cursor()
