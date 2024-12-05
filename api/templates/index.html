@@ -7,6 +7,33 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
-    <h1>Hello World!</h1>    
+    <h1>Hello World!</h1>
+
+    <form action="/send_value" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">이름</label>
+                </td>
+                <td>
+                    <input type="text" id="username" name="username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">텍스트</label>
+                </td>
+                <td>
+                    <input type="text" id="text" name="text" required>
+                </td>
+            </tr>
+        </table>
+        <div class="glogin">
+            <button type="submit">
+                <span>보내기</span>
+            </button>
+        </div>
+
+    </form>
 </body>
 </html>
